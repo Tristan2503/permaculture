@@ -13,6 +13,11 @@ public class Plante {
 	private int taille; //Taille en cm2
 	private couleurPlante couleur;
 	
+	
+	/*
+	 * 		Constructeur
+	 */
+	
 	public Plante(String nom, String description, int duree_pousse, Date date_debut_semis, Date date_fin_semis, 
 			niveauIrrigation arrosage, int taille, couleurPlante couleur) {
 		this.setNom(nom);
@@ -25,7 +30,9 @@ public class Plante {
 		this.setCouleur(couleur);		
 	}
 	
-	//getters + setters
+	/*
+	 * 		getters + setters
+	 */
 	public String getNom() {
 		return nom;
 	}
