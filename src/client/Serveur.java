@@ -1,4 +1,4 @@
-package serveur;
+package client;
 
 import java.net.ServerSocket;
 import java.util.Scanner;
@@ -12,7 +12,7 @@ public class Serveur {
 	public static void main(String arg[]) {
 		//while(true) {
 			try {
-				ServerSocket server = new ServerSocket(4000);
+				ServerSocket server = new ServerSocket(2000);
 
 				
 				//while(true) {
@@ -29,6 +29,7 @@ public class Serveur {
 					Terrain terrain = (Terrain) objectInputStream.readObject();
 					
 					//Afficher le terrain dans la console serveur
+					System.out.println("Message du serveur : ");
 					terrain.afficher();
 					
 					//Envoyer une réponse au client

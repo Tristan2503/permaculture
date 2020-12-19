@@ -1,10 +1,10 @@
-package client;
+package serveur;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Terrain implements Serializable {
+public class Terrain implements Serializable{
 	
 	private String nom;
 	private int longueur;
