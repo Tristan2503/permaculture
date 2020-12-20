@@ -17,9 +17,9 @@ public class FormulaireNouveauTerrain {
 	private JTextField TextFieldNomTerrain;
 	private JTextField TextFieldLongeurTerrain;
 	private JTextField TextFieldLargeurTerrain;
-
+	
 	/**
-	 * Launch the application.
+	 * Lancement de l'application.
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -35,14 +35,14 @@ public class FormulaireNouveauTerrain {
 	}
 
 	/**
-	 * Create the application.
+	 * Création du formulaire
 	 */
 	public FormulaireNouveauTerrain() {
 		initialize();
 	}
 
 	/**
-	 * Initialize the contents of the frame.
+	 * Initialisation des contenus du formulaire.
 	 */
 	private void initialize() {
 		frame = new JFrame();
