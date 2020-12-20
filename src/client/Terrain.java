@@ -54,6 +54,10 @@ public class Terrain implements Serializable {
 	}
 	
 	public void afficher() {
+		if(this.nom.isEmpty()) {
+			System.out.println("Veuillez remplir tous les champs du terrain !!!");
+		}
+		else {
 		System.out.println("Terrain : " + this.nom);
 		System.out.println("Longueur : " + this.longueur);
 		System.out.println("Largeur : " + this.largeur);
@@ -62,6 +66,7 @@ public class Terrain implements Serializable {
 		
 		for (Plante plante : this.plantes) {
 			plante.afficher();
+		}
 		}
 	}
 	
