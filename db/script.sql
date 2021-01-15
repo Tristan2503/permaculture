@@ -7,8 +7,8 @@ create table plante
 	nom text,
 	description text,
 	temps_pousse int,
-	semis_debut date,
-	semis_fin date,
+	semis_debut int,
+	semis_fin int,
 	irrigation int check (irrigation in (1,2,3)),
 	superficie double,
 	couleur varchar(10) check (couleur in ('ROUGE','VERT','Jaune','ORANGE','VIOLET'))
@@ -22,6 +22,6 @@ create table terrain
 	plantes text
 );
 
-insert into plante values ('1','tomate','2','legume rouge pousse hors de terre','01:04:2020','31:07:2020','1','1','ROUGE');
+insert into plante values ('1','tomate','2','legume rouge pousse hors de terre','4','7','1','1','ROUGE');
 
 insert into terrain values ('1',null,'10','10',null);
